@@ -7,7 +7,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-red-700: oklch(0.505 0.213 27.518);
     --color-blue-700: oklch(0.488 0.243 264.376);
     --color-blue-800: oklch(0.424 0.199 265.638);
     --spacing: 0.25rem;
@@ -429,9 +428,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1057,9 +1053,6 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
-  .bg-red-700 {
-    background-color: var(--color-red-700);
-  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1268,23 +1261,8 @@
   .align-top {
     vertical-align: top;
   }
-  .font-\[\"Outfit\"\"Outfit\"\=\=\=\] {
-    font-family: "Outfit""Outfit"===;
-  }
-  .font-\[\"Outfit\"\"Outfit\"\=\=\] {
-    font-family: "Outfit""Outfit"==;
-  }
-  .font-\[\"Outfit\"\"Outfit\"\] {
-    font-family: "Outfit""Outfit";
-  }
-  .font-\[\"Outfit\"\] {
-    font-family: "Outfit";
-  }
-  .font-\[\'\'\] {
-    font-family: '';
-  }
-  .font-\[\'C\:\\Users\\notbo\\Documents\\estudos\\nft-preview-card-component\\src\\index\.html\'\] {
-    font-family: 'C:\Users\notbo\Documents\estudos\nft-preview-card-component\src\index.html';
+  .font-\[\'Outfi\'\] {
+    font-family: 'Outfi';
   }
   .font-\[\'Outfit\'\] {
     font-family: 'Outfit';
