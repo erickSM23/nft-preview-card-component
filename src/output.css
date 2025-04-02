@@ -6,10 +6,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(0.971 0.013 17.38);
     --color-red-500: oklch(0.637 0.237 25.331);
-    --color-blue-700: oklch(0.488 0.243 264.376);
-    --color-blue-800: oklch(0.424 0.199 265.638);
+    --color-amber-400: oklch(0.828 0.189 84.429);
+    --color-white: #fff;
     --spacing: 0.25rem;
+    --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -330,6 +332,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -417,6 +422,36 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[100\%\] {
+    height: 100%;
+  }
+  .h-\[100\] {
+    height: 100;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
+  .h-\[700px\] {
+    height: 700px;
+  }
+  .h-\[700x\] {
+    height: 700x;
+  }
+  .h-\[900px\] {
+    height: 900px;
+  }
+  .h-\[900x\] {
+    height: 900x;
+  }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -426,11 +461,32 @@
   .max-h-screen {
     max-height: 100vh;
   }
+  .min-h-\[400px\] {
+    min-height: 400px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-\[10\%\] {
+    width: 10%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
+  .w-\[400px\] {
+    width: 400px;
   }
   .w-screen {
     width: 100vw;
@@ -915,6 +971,21 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .rounded-\[15px\] {
+    border-radius: 15px;
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
+  }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1029,8 +1100,23 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#0d192b\;\] {
+    background-color: #0d192b;;
+  }
+  .bg-\[\#0d192b\] {
+    background-color: #0d192b;
+  }
+  .bg-\[\#2f415b\] {
+    background-color: #2f415b;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#1425\] {
+    background-color: #1425;
+  }
+  .bg-\[\#14253d\] {
+    background-color: #14253d;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1038,11 +1124,11 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
-  .bg-blue-800 {
-    background-color: var(--color-blue-800);
+  .bg-red-50 {
+    background-color: var(--color-red-50);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1219,6 +1305,15 @@
   .object-top {
     object-position: top;
   }
+  .p-\[20px\] {
+    padding: 20px;
+  }
+  .p-\[50px\] {
+    padding: 50px;
+  }
+  .p-\[400px\] {
+    padding: 400px;
+  }
   .text-center {
     text-align: center;
   }
@@ -1261,17 +1356,20 @@
   .align-top {
     vertical-align: top;
   }
-  .font-\[\'Outfi\'\] {
-    font-family: 'Outfi';
-  }
   .font-\[\'Outfit\'\] {
     font-family: 'Outfit';
   }
-  .font-\[Outfit\] {
-    font-family: Outfit;
+  .font-\[\'fit\'\] {
+    font-family: 'fit';
   }
-  .font-mono {
-    font-family: var(--font-mono);
+  .font-\[\'outfi\'\] {
+    font-family: 'outfi';
+  }
+  .font-\[\'outfit\'\] {
+    font-family: 'outfit';
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1349,6 +1447,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
