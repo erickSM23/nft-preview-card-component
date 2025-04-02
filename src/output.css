@@ -957,6 +957,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .scroll-auto {
     scroll-behavior: auto;
   }
@@ -1120,6 +1123,9 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#0d192\] {
+    background-color: #0d192;
+  }
   .bg-\[\#0d192b\] {
     background-color: #0d192b;
   }
@@ -1131,6 +1137,9 @@
   }
   .bg-\[\#14253d\] {
     background-color: #14253d;
+  }
+  .bg-\[\#\] {
+    background-color: #;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1938,6 +1947,46 @@
       @media (hover: hover) {
         opacity: 1;
       }
+    }
+  }
+  .md\:overflow-x-hidden {
+    @media (width >= 48rem) {
+      overflow-x: hidden;
+    }
+  }
+  .lg\:w-\[9\] {
+    @media (width >= 64rem) {
+      width: 9;
+    }
+  }
+  .lg\:w-\[98vw\] {
+    @media (width >= 64rem) {
+      width: 98vw;
+    }
+  }
+  .lg\:w-\[99vw\] {
+    @media (width >= 64rem) {
+      width: 99vw;
+    }
+  }
+  .lg\:w-\[100vw\] {
+    @media (width >= 64rem) {
+      width: 100vw;
+    }
+  }
+  .lg\:overflow-x-hidden {
+    @media (width >= 64rem) {
+      overflow-x: hidden;
+    }
+  }
+  .lg\:p-\[100px\] {
+    @media (width >= 64rem) {
+      padding: 100px;
+    }
+  }
+  .lg\:p-\[400px\] {
+    @media (width >= 64rem) {
+      padding: 400px;
     }
   }
 }
